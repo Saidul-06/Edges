@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #For_Country {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .childClass {
+            border: 5px solid;
+            padding: 5px;
+            border-radius: 3px;
+            border-color: coral;
+        }
+    </style>
 </head>
+
 <body>
     <h1>
-        countries
+        Details of Countries
     </h1>
+    
+<div  id="Details_of_country"> 
+   
+</div>
 
-    <div id="For_Country">
 
-    </div>
+    <main>
+        <div id="For_Country">
+
+        </div>
+
+    </main>
+   
+<button onclick="loadCountries()">All Countries</button>
 
     <script src="./countries.js"></script>
 </body>
